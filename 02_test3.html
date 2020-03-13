@@ -42,7 +42,7 @@
             font-weight: bold;
         }
 
-        .formbox {
+        .box-layout {
             max-width: 500px;
             margin: 0 auto;
             margin-bottom: 40px;
@@ -50,33 +50,76 @@
             border-radius: 5px;
             border: 4px solid #000;
         }
+        .product-title {
+            font-size: 25px;
+            color :rebeccapurple;
+        }
+        .detail-comment-01 {
+            margin-top : 5px;
+            margin-bottom : 20px;
+        }
     </style>
 
 </head>
 
 <body>
     <div class="wrap">
-        <div class="jumbotron">
-            <h1 class="display-4">나홀로 링크 메모장!</h1>
-            <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
-            <hr class="my-4">
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
-            </p>
-        </div>
-
-
-        <div class="formbox">
+        <div class="box-layout">
 
             <div>
                 <div>
                     <img class="card-img-top"
-                        src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp16touch-space-select-201911_GEO_KR?wid=904&hei=840&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1573165435305"
                         alt="Card image cap">
                 </div>
                 <div>
-                <span>상품을 팝니다.</span>
+                    <span class="product-title">맥북프로16인치 </span>
+                    <span>2,990,000원 / 1개</span>
                 </div>
+                <div>
+                    <span class="detail-comment-01">주어진 한계를 단호히 거부하고 세상을 바꿔나가는 선구자들. 그들을 위해 탄생한 새로운 MacBook Pro. 지금까지 Apple이 만든 노트북 중 가장 강력한 파워를
+                        자랑합니다. 몰입감 넘치는 16형 Retina 디스플레이, 초고속 프로세서, 차세대 그래픽, MacBook Pro 사상 가장 큰 배터리 용량, 새로운 Magic
+                        Keyboard, 그리고 방대한 저장 용량까지. 궁극의 프로를 위한 궁극의 노트북이죠. 맥북프로16인치를 소개합니다.</span>
+                </div>
+                <div>
+                    <span class="product-title">주문하기</span>
+                </div>
+
+                <form>
+                    <div class="form-row align-items-center">
+                      <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="inlineFormInputName">Name</label>
+                        <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
+                      </div>
+                      <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                          </div>
+                          <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto my-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                          <label class="form-check-label" for="autoSizingCheck2">
+                            Remember me
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+
+
+
+
                 <div>
                     <div class="form-group">
                         <label for="inputEmail4">아티클 URL</label>
@@ -94,73 +137,6 @@
             </div>
         </div>
 
-
-
-
-
-
-        <div class="card-columns">
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="#" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="#" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="#" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="#" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="#" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="#" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 
