@@ -53,29 +53,19 @@
         }
     </style>
     <script>
-function openPostBox()
-{
-    alert(bbbasfkjsadf);
-}
-        
-
-        // $('#postbox-control').hide();
-        // // let temp_html = '<a id="postbox-control2" class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 닫기</a>;
-        // // $('#postbox-control').append(temp_html);
-
-
-
-
-
-
+        function openPostBox() {
+            console.log(2);
+            if ($('#postbox-control').css('display') == 'block') {
+                console.log(3);
+                $('#postbox-control').hide();
+                $('#postbox-button').text('포스팅박스 열기');
+            } else if ($('#postbox-control').css('display') == 'none') {
+                console.log(4);
+                $('#postbox-control').show();
+                $('#postbox-button').text('포스팅박스 닫기');
+            }
+        }
     </script>
-
-
-
-
-
-
-
 </head>
 
 <body>
@@ -85,10 +75,10 @@ function openPostBox()
             <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
             <hr class="my-4">
             <p class="lead">
-                <a id="postbox-control" class="btn btn-primary btn-lg" href="#" role="button" onclick="openPostBox()">포스팅박스 열기</a>
+                <a class="btn btn-primary btn-lg" href="#" role="button" onclick="openPostBox()" id="postbox-button">포스팅박스 열기</a>
             </p>
         </div>
-        <div class="form-post" id="post-box">
+        <div class="form-post" id="postbox-control">
             <div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">아티클 URL</label>
