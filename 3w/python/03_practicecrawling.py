@@ -16,9 +16,21 @@ soup = BeautifulSoup(data.text, 'html.parser')
 
 
 movies = soup.select('#old_content > table > tbody > tr')
+
 for movie in movies:
-    a_list = movie.select_one('td.title > div ')
-    if a_list != None
+    # movie 안에 a 가 있으면,
+    a_tag = movie.select_one('td.title > div > a')
+
+    print(a_tag)
 
 
-print(a_list.text)
+    if a_tag is not None:
+        # 타이틀 = a태그 안에 있는 문자
+        title = a_tag.text
+        # 평점 찾기
+        star =  movie.select_one('td.point')
+        # 평점은 td.point 안에 있는 문자
+        point = star.text
+
+        print(title, point)
+
