@@ -6,7 +6,7 @@ db = client.dbsparta                      # 'dbsparta'라는 이름의 db를 만
 user = db.users.find_one({'name':'bobby'})
 print (user)
 
-db.users.update_one({'name':'bobby'},{'$set':{'age':97} , {'name': '도라'}})
+db.users.update_one({'name':'bobby'},{'$set':{'age':97},{'name': '도라'}})
 user = db.users.find_one({'name':'도라'})
 print (user)
 
