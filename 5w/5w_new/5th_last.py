@@ -10,9 +10,7 @@ db = client.dbsparta
 def get_urls():
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
     data = requests.get('https://movie.naver.com/movie/sdb/rank/rpeople.nhn', headers=headers)
-
     soup = BeautifulSoup(data.text, 'html.parser')
-
     trs = soup.select('#old_content > table > tbody > tr')
 
     urls = []
